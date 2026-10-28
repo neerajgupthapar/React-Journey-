@@ -1,0 +1,21 @@
+
+import { useState } from "react";
+
+export default function App() {
+  const [count, setCount] = useState(1);
+
+  return (
+    <div>
+      <h1>Welcome to my webpage</h1>
+      <p>Your rank is {count}</p>
+
+      <button onClick={() => setCount(count + 1)}>
+        Increase
+      </button>
+
+      <button onClick={() => setCount(count - 1)}>
+        Decrease
+      </button>
+    </div>
+  );
+}
